@@ -17,6 +17,26 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import "ippevents-mixins.scss";
 
 
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+  .text-align{
+    @include align-text-media(center, #00F);
+  }
+  .hidden-label {
+    display:none;
+  }
+}
+@media (max-width: $screen-phone) {
+  .text-align{
+    @include align-text-media(left, #0F0);
+  }
+}
+@media (min-width: $screen-tablet) {
+  .text-align {
+    @include align-text-media(right, #F00);
+  }
+}
+
+
 /* Put your CSS here */
 html, body {
   background: $gray-lighter;

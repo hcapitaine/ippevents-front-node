@@ -22,3 +22,8 @@
   border-right: 2px dashed $gray-lighter;
 }
 
+@mixin align-text-media($alignValue, $colorValue){
+    text-align:$alignValue;
+    color:$colorValue !important;
+}
+
